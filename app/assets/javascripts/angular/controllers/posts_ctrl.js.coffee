@@ -1,11 +1,11 @@
 App.controller 'PostsCtrl', ($scope, $interval, Post) ->
-  # 初期表示時の投稿フォーム初期値
-  $scope.newPost = { author: '名無しさん', body: '' }
+  # 投稿フォーム初期値
+  $scope.newPost = { author: '', body: '' }
 
-  # postを全件取得
+  # Post情報を全件取得
   Post.query (posts) ->
     $scope.posts = posts
-    $interval fetchUnread, 2 * 1000  #未読分を２秒毎に取得する
+    $interval fetchUnread, 2 * 1000  #未読分を２秒毎に取得
 
   # 未読分の取得
   fetchUnread = ->
