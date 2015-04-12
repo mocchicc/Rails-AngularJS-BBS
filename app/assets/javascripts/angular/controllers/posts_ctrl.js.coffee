@@ -1,6 +1,6 @@
 App.controller 'PostsCtrl', ($scope, $interval, Post) ->
   # 初期表示時の投稿フォーム初期値
-  $scope.newPost = { author: '名無しさん（一度入力すると保持されます）', body: '' }
+  $scope.newPost = { author: '名無しさん', body: '' }
 
   # postを全件取得
   Post.query (posts) ->
