@@ -1,0 +1,19 @@
+.post {
+  margin: 10px 0;
+  border-bottom: 1px solid;
+
+  .author {
+    background: lightyellow;
+    padding: 3px;
+  }
+
+  .time {
+    color: gray;
+    margin-left: 10px;
+  }
+
+  .body {
+    white-space: pre;
+    margin: 5px 0;
+  }
+}
